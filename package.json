@@ -1,0 +1,48 @@
+{
+  "name": "file-upload-ng",
+  "version": "1.0.0",
+  "description": "File Upload with AngularJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start",
+    "start-dev": "webpack && webpack-dev-server --content-base client/ --hot --inline",
+    "serve-dev": "webpack && webpack-dev-server --content-base client/ --hot --inline",
+    "build": "webpack -p --config ./webpack.config.js --progress",
+    "start": "./node_modules/webpack/bin/webpack.js -p --progress && node index.js"
+  },
+  "author": "Mubarak Ade Imam",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.6.6",
+    "angular-animate": "1.6.6",
+    "angular-mocks": "1.6.6",
+    "@uirouter/angularjs": "1.0.6",
+    "webpack": "3.5.5",
+    "html-webpack-plugin": "2.30.1",
+    "copy-webpack-plugin": "4.0.1",
+    "file-loader": "0.11.2",
+    "raw-loader": "0.5.1",
+    "sass-loader": "4.1.1",
+    "style-loader": "0.13.1",
+    "url-loader": "0.5.7",
+    "babel-core": "6.25.0",
+    "babel-loader": "7.1.1",
+    "babel-preset-es2015": "6.24.1",
+    "express": "4.15.3"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.6.6",
+    "html-loader": "^0.5.1",
+    "jasmine": "^2.7.0",
+    "jasmine-core": "^2.7.0",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-html-detailed-reporter": "^1.1.21",
+    "karma-jasmine": "^1.1.0",
+    "karma-ng-html2js-preprocessor": "^1.0.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.31",
+    "karma-webpack": "^2.0.4",
+    "webpack-dev-server": "2.7.1"
+  }
+}
