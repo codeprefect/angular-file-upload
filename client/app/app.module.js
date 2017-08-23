@@ -6,3 +6,4 @@
 })();
 
 require('./app.component');
+require('./fileUpload');

@@ -23,6 +23,13 @@
             "problemMatcher": [
                 "$jshint-stylish"
             ]
+        },
+        {
+            "type": "npm",
+            "script": "test",
+            "problemMatcher": [
+                "$jshint-stylish"
+            ]
         }
     ]
 }
