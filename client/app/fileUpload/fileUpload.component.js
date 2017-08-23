@@ -25,15 +25,9 @@
 
     function uploadFiles() {
       var uploadUrl = "http://localhost:59810/api/File/Upload";
-      angular.forEach(vm.files, function (fil) {
-        var file = fil._file,
-          promise = fileUploadService.uploadFileToUrl(file, uploadUrl);
-
-        promise.then(function (response) {
-          fil.status = response.xhrStatus.toUpperCase();
-        }, function () {
-          fil.status = 'Failed';
-        });
+      angular.forEach(vm.files, function (file) {
+        console.log(file);
+        fileUploadService.uploadFileToUrl(file, uploadUrl);
       });
     }
 
