@@ -37,6 +37,7 @@
             _file: item
           };
           values.push(value);
+          console.log(values);
         });
         scope.$apply(function () {
           modelSetter(scope, values);
