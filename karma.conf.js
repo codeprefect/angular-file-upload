@@ -15,7 +15,10 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      { pattern: './index.spec.js', watched: true },
+      './dist/vendor.js',
+      './node_modules/angular-mocks/angular-mocks.js',
+      './dist/bundle.js',
+      './index.spec.js'
     ],
 
 
